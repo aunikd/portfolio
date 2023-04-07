@@ -1,0 +1,94 @@
+.header {
+  /* height: 50px; */
+  background: #039be5;
+  /* padding: 3px 5px; */
+  /* position: relative; */
+}
+
+nav {
+  position: relative;
+}
+
+.hr-animate {
+  position: relative;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	/* background: linear-gradient(to right, #ffffff, #595959, #1e1e1e, #656565); */
+
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	height: 1px;
+    /* width: 100%; */
+    margin-left :clamp(3.125rem,8%, 200px);
+    margin-right :clamp(3.125rem, 8%, 200px);
+
+    opacity: 0.5;
+    border: 0;
+ }
+ @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* hr {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  height: 0.5px;
+height: 1px;
+  border: none;
+  border-radius: 0px;
+
+  animation: KITTAnim 4s infinite ease-in-out alternate;
+} */
+
+/**
+      Keyframes
+  Do not try at home
+  
+  **/
+
+
+ul {
+  /* position: absolute; */
+  /* top:40%;
+    left:40%; */
+  display: flex;
+  /* center elements */
+    justify-content: center;
+    /* box-sizing: border-box; */
+    /* margin: 10px 40px; */
+    padding: 0 clamp(3.125rem, 8%, 200px) 0 clamp(3.125rem, 8%, 200px);
+
+}
+li{
+    padding: 0.625vw 3.125vw;
+}
+ul li {
+  /* list-style: none; */
+
+  /* position: relative; */
+  display: block;
+  
+}
+ul:hover li  {
+  opacity: 0.2;
+  filter: blur(2px);
+}
+
+a{
+  text-decoration: none;
+  color: #dddddd;
+
+}
+
+  
+ul li:hover {
+  opacity: 1;
+  filter: blur(0px);
+}

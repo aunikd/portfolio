@@ -1,0 +1,211 @@
+/* You can add global styles to this file, and also import other style files */
+/* body {
+  background-color: #161616;
+  background-image: url("assets/images/background.png");
+  animation: fade-out 5s infinite;
+ ;
+} */
+/* 
+
+
+@keyframes grained {
+  0% {
+    transform: rotate(0deg);
+  }
+    100% {
+    transform: rotate(360deg);
+    }
+} */
+
+/*  moving image css*/
+.background {
+  background-image: url("./assets/images/background.png");
+  content: "";
+  /* do hieght : 300%; below is to test */
+  position: absolute;
+  height: 300%;
+  width: 300%;
+  left: -100%;
+  top: -100%;
+  background-color: #101010;
+  animation-name: grained;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(20);
+}
+.wrapper {
+  /* background-image: url("../assets/images/background.png"); */
+  content: "";
+  height: 100%;
+  width: 100%;
+
+  /* height: 600px;
+    width: 600px; */
+  /* margin: 200px; */
+
+  position: relative;
+  overflow: hidden;
+  color: #dddddd;
+}
+
+@keyframes grained {
+  0% {
+    transform: translate(-10%, 10%);
+  }
+  10% {
+    transform: translate(-25%, 0%);
+  }
+  20% {
+    transform: translate(-30%, 10%);
+  }
+  30% {
+    transform: translate(-30%, 30%);
+  }
+  40% {
+    transform: translate();
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(-20%, 20%);
+  }
+  70% {
+    transform: translate(-5%, 20%);
+  }
+  80% {
+    transform: translate(-25%, 5%);
+  }
+  90% {
+    transform: translate(-30%, 25%);
+  }
+  100% {
+    transform: translate(-10%, 10%);
+  }
+}
+
+
+/*  */
+
+@font-face {
+  font-family: MyFont;
+  src: url(./assets/fonts/WorkSans.ttf);
+}
+
+@font-face {
+  font-family: MyFontItalics;
+  src: url(./assets/fonts/WorkSans_italics.ttf);
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: transparent;
+  font-family: MyFont;
+    font-size: 1rem;
+  
+  line-height: 20px;
+}
+
+
+.node {
+  cursor: pointer;
+}
+
+.overlay {
+  background-color: transparent;
+}
+
+.node circle {
+  fill: #DDDDDD !important;
+  stroke: #DDDDDD;
+  stroke-width: 1.5px;
+  /* r : 7 !important; */
+
+
+}
+
+.node circle:hover {
+  /* fill: green !important;
+  stroke: green; */
+  fill: #ededed !important;
+  stroke: #dddddd84;
+  cx :"50%";
+  cy : "50%" ;
+  r: 4 !important;
+  r : "125%" !important;
+
+  animation-duration: 2s;
+  animation-iteration-count:  infinite;
+  animation-name: buttonTransition;
+  animation-timing-function: ease-in-out;
+  animation-direction:alternate;
+}
+
+@keyframes buttonTransition {
+
+  
+  from {
+      transform: scale(0.7);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+
+.node text {
+  font-size: 8px;
+}
+
+.node text:hover {
+  /* fill: green !important;
+  stroke: green; */
+  /* fill: #ededed !important;
+  stroke: #dddddd84; */
+
+  animation-duration: 1s;
+  animation-iteration-count:  once;
+  animation-name: textTransition;
+}
+
+@keyframes textTransition {
+
+  
+  from {
+      transform: scale(0.97);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1px;
+  opacity: 0.3;
+}
+
+.templink {
+  fill: none;
+  stroke: red;
+  stroke-width: 3px;
+  
+}
+
+.ghostCircle.show {
+  display: block;
+}
+
+.ghostCircle,
+.activeDrag .ghostCircle {
+  display: none;
+}
+text {
+  fill: #DDDDDD;
+}
+
+
+
