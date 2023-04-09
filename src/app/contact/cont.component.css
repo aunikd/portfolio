@@ -59,6 +59,7 @@
  .email{
     text-decoration: none;
     color: #dddddd;
+    font-size: 3vw;
   }
   
   /* .email:hover {
