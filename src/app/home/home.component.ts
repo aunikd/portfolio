@@ -41,4 +41,11 @@ export class HomeComponent {
     // console.log(this.elem1.nativeElement.top);
     this.elem1.nativeElement.style.left = this.mouseX + 'px';
   }
+
+  downloadPDF(){
+    let link =  document.createElement("a");
+    link.download = "resume.pdf";
+    link.href = "/resume.pdf";
+    link.click();
+  }
 }
